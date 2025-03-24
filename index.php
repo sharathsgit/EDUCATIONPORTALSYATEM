@@ -1,3 +1,6 @@
+<!-- username --admin@example.com
+ password -- admin123 -->
+
 <?php
 session_start();
 

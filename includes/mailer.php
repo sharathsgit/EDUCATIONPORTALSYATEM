@@ -2,7 +2,7 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-require __DIR__ . '/../vendor/autoload.php';
+require __DIR__ . '/vendor/autoload.php';
 
 function sendVerificationEmail($to, $code) {
     $mail = new PHPMailer(true);
@@ -11,8 +11,8 @@ function sendVerificationEmail($to, $code) {
         $mail->isSMTP();
         $mail->Host = "smtp.gmail.com";
         $mail->SMTPAuth = true;
-        $mail->Username = getenv("MAIL_USERNAME") ?: "your_email@gmail.com";
-        $mail->Password = getenv("MAIL_PASSWORD") ?: "your_app_password";
+        $mail->Username = getenv("MAIL_USERNAME") ?: "saratkumarbommineni@gmail.com";
+        $mail->Password = getenv("MAIL_PASSWORD") ?: "gqnu lxcq bxit flpy ";
         $mail->SMTPSecure = "tls";
         $mail->Port = 587;
 
